@@ -1,0 +1,16 @@
+.header {
+    padding: var(--spacing-sections) 0;
+    box-shadow: var(--shadows-v1);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header--hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}

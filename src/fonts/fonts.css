@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    ;
+    src: url("./fonts/montserrat-bold.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: 'Courier New', Courier, monospace;
+    src: url("./fonts/courier-new.ttf") format("truetype");
+}

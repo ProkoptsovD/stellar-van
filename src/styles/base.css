@@ -1,0 +1,15 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: var(--fw-400);
+    font-size: var(--fs-300);
+    line-height: var(--lh-17);
+
+    background-color: var(--clr-neutral-400);
+    color: var(--clr-dark-100);
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 20px;
+}
