@@ -1,3 +1,7 @@
+@import '../../styles/anamations/animista.css';
+@import '../../styles/anamations/loading-dots.css';
+@import '../../styles/anamations/loading-main.css';
+
 .loading-screen {
     position: absolute;
     inset: 0;
@@ -31,6 +35,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-size: var(--fs-200);
 }
 
 .loader span {
@@ -46,7 +52,7 @@
 
     border: 2px solid #fff;
     pointer-events: none;
-    animation: animate 5s linear infinite;
+    animation: loading-main 5s linear infinite;
 }
 
 .loader span:nth-child(1) {
@@ -63,34 +69,15 @@
     border-radius: 73% 27% 56% 44% / 57% 74% 26% 43%;
 }
 
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .loading-screen small {
     color: var(--clr-neutral-100);
 }
 
-.dot1 {
-    animation: dot1 1s linear infinite both;
-}
-
-/* .dot2 {
-    animation: dot2 1000ms linear 1000ms;
-}
-.dot3 {
-    animation: dot3 1000ms linear 2000ms;
-} */
-
-.dot:not(:last-child) {
-    margin-right: -0.15em;
-}
+/* =========== three dots animation ================ */
+    .loading:after {
+        content: ' .';
+        animation: dots 1s steps(5, end) infinite;
+    }
 
 /* =========== hide class ===============*/
 .loading-screen.is-hidden {
@@ -102,5 +89,6 @@
 }
 
 .loading-screen.is-shown {
+    color: var(--clr-neutral-400);
     background-color: #111;
 }
