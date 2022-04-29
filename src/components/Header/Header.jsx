@@ -1,9 +1,9 @@
 import React from "react";
-import Burger from "../Burger";
+import Burger from "../Burger/Burger";
 
 const Header = (props) => {
     return (
-        <header className="header header--hidden" data-header>
+        <header className="header" data-header>
             <div className="container header__container">
                 <p className="header__logo">Stellar Van</p>
 

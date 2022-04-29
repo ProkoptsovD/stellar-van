@@ -13,7 +13,7 @@ import WeatherOnMars from './pages/WeatherOnMars';
 import logo from './logo.svg';
 import Header from './components/Header/Header';
 import Apod from './components/Apod/Apod';
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar/Navbar';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 

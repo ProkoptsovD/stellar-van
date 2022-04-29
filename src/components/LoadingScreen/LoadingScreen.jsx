@@ -3,7 +3,7 @@ import './LoadingScreen.css';
 
 const LoadingScreen = ({text}) => {
     return (
-        <div className="loading-screen is-shown" data-loader>
+        <div className="loading-screen is-hidden" data-loader>
             <div className="loader loading">
                 {text}
                 <span></span>

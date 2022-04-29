@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import './NavBar.css';
 
 const Navbar = () => {
     return (
-        <nav className="get-started">
+        <nav className="get-started is-hidden">
             <div className="container">
                 <h2 className="get-started__title">
                     Pickup a category

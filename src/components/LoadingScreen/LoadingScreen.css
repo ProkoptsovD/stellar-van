@@ -76,11 +76,12 @@
 /* =========== three dots animation ================ */
     .loading:after {
         content: ' .';
-        animation: dots 1s steps(5, end) infinite;
+        font-weight: var(--fw-400);
+        animation: dots 1.2s steps(5, end) infinite;
     }
 
 /* =========== hide class ===============*/
-.loading-screen.is-hidden {
+.loading-screen.is-hidden{
     opacity: 0;
     visibility: hidden;
     background-color: transparent;
@@ -88,7 +89,7 @@
     pointer-events: none;
 }
 
-.loading-screen.is-shown {
+.loading-screen {
     color: var(--clr-neutral-400);
     background-color: #111;
 }
