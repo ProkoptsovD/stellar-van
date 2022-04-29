@@ -3,16 +3,15 @@
     justify-content: space-between;
     align-items: center;
     
-    height: 50px;
-    padding: 5px 15px;
+    height: 30px;
+    padding: 3px var(--spacing-container);
 
-   
     box-shadow: var(--shadows-v3);
 }
 
-svg {
-    width: 2rem;
-    height: 2rem;
+.footer svg {
+    width: 40px;
+    height: 75%;
 
     fill: var(--clr-accent-400);
 }
