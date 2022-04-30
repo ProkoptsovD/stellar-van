@@ -1,0 +1,25 @@
+.get-started {
+    padding: var(--spacing-container) 0;
+    &__title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.category-list {
+    &__item {
+        border-bottom: 1px solid var(--clr-accent-300);
+        
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+    }
+    &__link {
+        color: var(--clr-accent-400);
+
+        &:active {
+            color: var(--clr-neutral-500);
+            filter: brightness(80%);
+        }
+    }
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import './NavBar.css';
+import './NavBar.scss';
 
 const Navbar = () => {
     return (
-        <nav className="get-started is-hidden">
+        <nav className="get-started">
             <div className="container">
                 <h2 className="get-started__title">
                     Pickup a category
@@ -17,7 +17,7 @@ const Navbar = () => {
                     </li>
                     <li className="category-list__item">
                         <NavLink to="/articles" className="category-list__link">
-                            Articles and usefull information
+                            Articles
                         </NavLink>
                     </li>
                     <li className="category-list__item">

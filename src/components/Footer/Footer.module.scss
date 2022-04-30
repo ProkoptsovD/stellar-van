@@ -1,0 +1,27 @@
+@use '../../styles/sass-helpers/btn-active.scss';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 30px;
+    padding: 3px var(--spacing-container);
+
+    box-shadow: var(--shadows-v3);
+    
+    & a {
+        height: 100%;
+    }
+    
+    & svg {
+        width: 40px;
+        height: 75%;
+    
+        fill: var(--clr-accent-400);
+
+        &:active {
+            @extend %active-icon-btn;
+    }
+    }
+}

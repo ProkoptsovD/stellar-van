@@ -1,0 +1,12 @@
+@use '../../styles/sass-helpers/btn-active.scss';
+
+.burger-menu {
+    width: 27px;
+    height: 25px;
+    
+    fill: var(--clr-accent-400);
+
+    &:active {
+        @extend %active-icon-btn;
+    }
+}

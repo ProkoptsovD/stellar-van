@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 //=============================== PAGES ==============================//
 import SpaceImages from './pages/SpaceImages';
@@ -9,13 +9,13 @@ import PolychromaticImages from './pages/PolychromaticImages';
 import SpaceWeather from './pages/SpaceWeather';
 import WeatherOnMars from './pages/WeatherOnMars';
 
-//============================  COMPONENTS =========================//
+//============================ COMPONENTS =========================//
 import Header from './components/Header/Header';
 import Apod from './components/Apod/Apod';
-import Navbar from './components/NavBar/Navbar';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
+import MenuModal from './components/MenuModal/MenuModal';
 
 function App() {
 	return (
@@ -23,8 +23,8 @@ function App() {
 			<div className="App">
 				<Header />
 				<main>
-					<Navbar />
 					<Routes>
+						<Route path="/" element={<Apod />}></Route>
 						<Route path="/space-images" element={<SpaceImages />}></Route>
 						<Route path="/articles" element={<Articles />}></Route>
 						<Route path="/weather-on-mars" element={<WeatherOnMars />}></Route>
@@ -41,6 +41,7 @@ function App() {
 
 				<Footer />
 			</div>
+			<MenuModal />
 		</BrowserRouter>
 	);
 }

@@ -1,8 +1,9 @@
-@import './styles/base.css';
-@import './styles/reset-default.css';
+@import '../node_modules/modern-normalize/modern-normalize.css';
+@import './styles/base.scss';
+@import './styles/reset-default.scss';
 @import './styles/variables.css';
-@import './components/Button/Button.css';
+/* @import './components/Button/Button.css';
 @import './components/Header/Header.css';
 @import './components/Apod/Apod.css';
-@import './components/LoadingScreen/LoadingScreen.css';
+@import './components/LoadingScreen/LoadingScreen.scss'; */
 

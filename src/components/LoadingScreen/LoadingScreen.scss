@@ -1,3 +1,4 @@
+@use '../../styles/sass-helpers/placeholder-temporary-hidden.scss';
 @import '../../styles/anamations/animista.css';
 @import '../../styles/anamations/loading-dots.css';
 @import '../../styles/anamations/loading-main.css';
@@ -82,11 +83,7 @@
 
 /* =========== hide class ===============*/
 .loading-screen.is-hidden{
-    opacity: 0;
-    visibility: hidden;
-    background-color: transparent;
-
-    pointer-events: none;
+    @extend %temporary-hidden;
 }
 
 .loading-screen {
