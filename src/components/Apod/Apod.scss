@@ -3,7 +3,8 @@
     padding: var(--spacing-container) 0;
 
     color: var(--clr-neutral-600);
-    background-color: cornflowerblue;
+
+    overflow-y: scroll;
 
     &__container {
         display: flex;
@@ -18,7 +19,7 @@
     
         margin-bottom: auto;
     
-        font-family: var(--ff-1);
+        font-family: var(--ff-2);
         font-weight: var(--fw-700);
         font-size: var(--fs-400);
         line-height: var(--lh-17);

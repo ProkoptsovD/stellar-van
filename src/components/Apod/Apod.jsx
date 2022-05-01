@@ -7,8 +7,8 @@ import './Apod.scss';
 const Apod = () => {
     const [title, setTitle] = useState('Picture title');
     const [author, setAuthor] = useState('author');
-    const [descr, setDescr] = useState('Here must be description')
-    const [bgImage, setBgImage] = useState('');
+    const [explanation, setExplanation] = useState('Here must be description')
+    const [url, setUrl] = useState('');
 
     const makeRequest = () => {
     fetchPictures('https://api.nasa.gov/planetary/apod')
@@ -22,11 +22,12 @@ const Apod = () => {
         .then((data) => {
             setTitle(data.title);
             setAuthor(data.copyright);
-            setBgImage()
+            setExplanation(data.explanation);
+            setUrl(data.url)
         }).catch(console.log)
 }
     
-    // useEffect(makeRequest, []);
+    useEffect(makeRequest, []);
     
     return (
         <section
@@ -37,7 +38,8 @@ const Apod = () => {
                 {/* flip effect */}
                 <Flipper
                     title={title}
-                    descr={descr}
+                    descr={explanation}
+                    url={url}
                     
                 />
                 <h1

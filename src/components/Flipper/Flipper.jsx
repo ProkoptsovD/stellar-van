@@ -7,15 +7,18 @@ const Flipper = (props) => {
             <div className="flipper-inner">
                 <div className="flipper-front">
                     <img
-                        src={props.url || require('../../images/logo/logo.png')}
+                        src={props.url || '/'}
                         alt="some picture"
-                        className="imagpere"
+                        className="flipper-image"
                     />
                 </div>
                 <div className="flipper-back">
                     <h2 className="flipper-back-name">
                         {props.title}
-                    </h2> 
+                    </h2>
+
+                    <hr />
+                    
                     <p className="flipper-back-descr">
                         {props.descr}
                     </p> 
