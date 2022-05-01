@@ -2,7 +2,7 @@
     position: relative;
 
     height: calc(95vh - 47px - 30px);
-    padding: var(--spacing-container) 0;
+    padding: calc(var(--spacing-container) + 3px) 0;
 
     color: var(--clr-neutral-600);
 
@@ -43,7 +43,7 @@
     
     &__tip {
         position: absolute;
-        top: 0;
+        top: 3px;
 
         font-size: var(--fs-100);
 
