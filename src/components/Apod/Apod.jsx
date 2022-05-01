@@ -34,7 +34,10 @@ const Apod = () => {
             className="apod"
             data-apod="apod-bg">
             <div className="container apod__container">
-                
+                <p
+                    className="apod__tip">                    
+                    astronomy picture of the day
+                </p>
                 {/* flip effect */}
                 <Flipper
                     title={title}
@@ -52,10 +55,6 @@ const Apod = () => {
                     data-apod="copyright">                   
                     {author}
                 </small>
-                <p
-                    className="apod__tip">                    
-                    astronomy picture of the day
-                </p>
                 <Button
                     className={['apod__btn']}
                     text='Share'

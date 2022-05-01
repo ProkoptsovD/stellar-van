@@ -1,5 +1,7 @@
 .apod {
-    height: calc(100vh - 47px - 30px);
+    position: relative;
+
+    height: calc(95vh - 47px - 30px);
     padding: var(--spacing-container) 0;
 
     color: var(--clr-neutral-600);
@@ -17,13 +19,15 @@
     &__title {
         width: 100%;
     
-        margin-bottom: auto;
+        margin: 10px 0;
     
         font-family: var(--ff-2);
         font-weight: var(--fw-700);
         font-size: var(--fs-400);
-        line-height: var(--lh-17);
+        line-height: 1;
         text-align: center;
+
+        filter: brightness(80%);
     }
     
     &__text {
@@ -38,8 +42,12 @@
     }
     
     &__tip {
-        padding-bottom: 7px;
+        position: absolute;
+        top: 0;
+
         font-size: var(--fs-100);
+
+        color: var(--clr-dark-100);
     }
     
     &__img {
